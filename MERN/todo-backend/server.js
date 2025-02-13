@@ -110,7 +110,7 @@ mongoose.connect('mongodb://localhost:27017/mern-app')
  });
  
  //start the server
- const port=8000;
+ const port=process.env.PORT || 8000;
  app.listen(port,()=>{
     console.log("Server is listening to port"+port);
  })
